@@ -1,0 +1,1 @@
+- !!! Hati-hati ketika ingin menggunakan terminal, pastikan gunakan git di luar folder FE & BE. untuk install package dan library yang dibutuhkan, serta command, pastikan direktori nya ada di dalam folder BE/FE !!!
