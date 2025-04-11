@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reservations', function (Blueprint $table) {
+        Schema::create('games', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->foreignUuid('table_id')->constrained('tables')->onDelete('cascade');
-            $table->foreignUuid('user_id')->constrained('users')->onDelete('cascade');
-            $table->timestamp('start_date');
-            $table->timestamp('end_date');
+            $table->string('title');
+            $table->string('slug');
+            $table->string('description')->nullable();
+            $table->foreignUuid('created_by')->references('id')->on('users')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('reservations');
+        Schema::dropIfExists('games');
     }
 };
