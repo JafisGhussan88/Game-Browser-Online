@@ -6,4 +6,10 @@ export const routes: RouteObject[] = [
     path: "/",
     element: <Home />,
   },
+
+  {
+    path: "/login",
+    element: <Home />,
+  },
+
 ];
