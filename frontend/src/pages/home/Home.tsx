@@ -6,7 +6,7 @@ export const Home: React.FC = () => {
           <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <div className="text-white bg-orange-600 border-0 py-1 px-8 focus:outline-none hover:bg-orange-500 rounded-tr-3xl rounded-bl-3xl round text-lg">
               <div style={{ verticalAlign: "inherit" }}>
-                <div style={{ verticalAlign: "inherit" }}>Jafis Gamesp</div>
+                <div style={{ verticalAlign: "inherit" }}>Jafis Games</div>
               </div>
             </div>
           </a>
